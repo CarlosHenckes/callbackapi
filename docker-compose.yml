@@ -1,0 +1,14 @@
+version: '2.2'
+services:
+  callbackapi:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: callbackapi
+    ports:
+      - 8000:8000
+    networks:
+      - network1
+ 
+networks:
+  network1:
